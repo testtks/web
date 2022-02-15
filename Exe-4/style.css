@@ -1,0 +1,16 @@
+.image {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.buttons {
+  position: relative;
+  left: 420px;
+}
+
+.address {
+  position: relative;
+  left: 420px;
+  top: 100px;
+}

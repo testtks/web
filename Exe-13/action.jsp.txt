@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <label>Name : </label>
+        <%out.print(request.getParameter("usr-name"));%>
+        <br>
+        <label>Father's Name : </label>
+        <%out.print(request.getParameter("fname")); %>
+        <br>
+        <label>Department : </label>
+        <%out.print(request.getParameter("dept"));%>
+    </body>
+</html>

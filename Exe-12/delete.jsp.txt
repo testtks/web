@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Deleting cookies</title>
+</head>
+<body>
+<center>
+<h1>Deleting cookies</h1>
+</center>
+<%
+Cookie cookie=null;
+Cookie[]cookie=null;
+//Get an array of Cookies associated with this domain
+Cookies=request.getCookies();
+if(cookies!=null)
+{
+Out.println("<h2>Found cookies Name and Value</h2>");
+for (int i=0;i<cookies.length;i++)
+{
+Cookie=cookies[i];
+ff((cookie.getName()).compare To("frist_name")==0)
+{
+Cookie.setMaxAge(0);
+Response.addcookie(cookie);
+Out.print("Deleted cookie:"+cookie.getName()+"<br/>");
+}
+Out.print("Name:"+cookie.getName()+",");
+Out.print("value:"+cookie.getvalue()+"<br/>");
+}}
+else
+{
+Out.println("<h2>No cookies founds</h2>");
+}
+%>
+<a href="index.jsp">Home</a>
+</body>
+</html>

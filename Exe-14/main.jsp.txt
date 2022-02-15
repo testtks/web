@@ -1,0 +1,30 @@
+<%-- 
+    Document   : main
+    Created on : Feb 14, 2022, 3:21:25 PM
+    Author     : kumar
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <%
+            Integer hit_value = (Integer)application.getAttribute("hitCounter");
+            if (hit_value == null || hit_value == 0){
+                out.println("WELCOME TO MY WEBSITE");
+                hit_value = 1;
+            }
+            else {
+                hit_value += 1;
+                out.println("WELCOME BACK TO MY WEBSITE");
+            }
+            // Updating the hitCounter attribute
+            application.setAttribute("hitCounter", hit_value);
+        %>
+        <h3>You have visited this website <%=hit_value%> times.</h3>
+    </body>
+</html>

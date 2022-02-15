@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays in JSP</title>
+    </head>
+    <body>
+        <form action="main.jsp">
+        <label><b>Enter the Open Source name : </b></label>
+        <input type="text" name="value"/><br>
+        <input type="submit"/>
+        </form>
+    </body>
+</html>

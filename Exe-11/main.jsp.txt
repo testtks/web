@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+      <%   
+        // Open Source names 
+        String values[]=new String[5];
+        values[0]="python";
+        values[1]="linux";
+        values[2]="android";
+        values[3]="flutter";
+        values[4]="terminal";
+        
+        // Definition for open source names
+        String definition[] = new String[5];
+        definition[0] = "It is a programming Language";
+        definition[1] = "It is an Open Source Operating System";
+        definition[2] = "It is a mobile Operating System developed by Google, Inc";
+        definition[3] = "It is a cross platform for both mobile and web application";
+        definition[4] = "It is used to execute commands directly on the operating system";
+        
+        String value=request.getParameter("value");
+        
+        // Iterating through the `values`
+        for(int i=0; i<5; i++){
+            if (value.equalsIgnoreCase(values[i])){
+                out.println(value + " - " + definition[i]);
+                break;
+            }
+          }
+       %>  
+    </body>
+</html>

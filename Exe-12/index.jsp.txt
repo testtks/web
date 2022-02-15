@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>COOKIES</title>
+</head>
+<body>
+<center>
+<h1>Manipualting Cookies</h1>
+<a href="setcookies.jsp">Creating Cookies</a><br>
+<a href="readings.jsp">Reading Cookies</a><br>
+<a href="delete.jsp">Deleting Cookies</a><br>
+</body>
+</html>
